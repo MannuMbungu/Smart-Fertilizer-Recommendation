@@ -1,0 +1,148 @@
+.container {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(15, 15, 15);
+  width: 100vw;
+}
+
+.question {
+  color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-weight: 430;
+  margin-left: 60%;
+  margin-top: 8%;
+}
+
+.description {
+  color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 320;
+  margin-left: 55%;
+  margin-right: 3%;
+  text-align: center;
+}
+
+.start_btn {
+  margin-left: 70%;
+  margin-right: 3%;
+  margin-top: 1%;
+  background-color: #10a37f;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 13rem;
+}
+
+.start_btn:hover {
+  background-color: #007553;
+}
+
+.start_btn:active {
+  transform: scale(0.95, 0.95);
+}
+
+/*------------------------------------------------------------------------*/
+
+/* CSS for width above 830px */
+@media (width < 830px) {
+
+  /* At 830px of Width, Hide the 3D model on smaller screens */
+  .container {
+    display: none;
+  }
+
+  .description {
+    color: black;
+  }
+
+  .question {
+    color: black;
+  }
+}
+
+/*------------------------------------------------------------------------*/
+
+@media (250px <= width <= 830px) {
+  .question {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-top: 15%;
+    margin-right: 8%;
+    text-align: center;
+  }
+
+  .description {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    margin-left: 13%;
+    margin-right: 8%;
+    margin-top: 7%;
+  }
+
+  .start_btn {
+    margin: 0;
+    margin-top: 10%;
+    margin-left: 25%;
+  }
+}
+
+@media (250px <= width <= 350px) {
+  .description {
+    font-size: 1rem;
+    margin-left: 28%;
+    margin-right: 8%;
+    margin-top: 7%;
+  }
+
+  .question {
+    margin-left: 25%;
+    margin-right: 8%;
+  }
+}
+
+@media (415px <= width <= 830px) {
+  .question {
+    font-size: 2rem;
+    margin-left: 28%;
+    margin-right: 8%;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    margin-left: 25%;
+    margin-right: 5%;
+    margin-top: 7%;
+  }
+
+  .start_btn {
+    margin: 0;
+    margin-top: 10%;
+    margin-left: 38%;
+  }
+}
+
+@media (680px <= width <= 830px) {
+  .question {
+    margin-left: 17%;
+  }
+
+  .description {
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+}
