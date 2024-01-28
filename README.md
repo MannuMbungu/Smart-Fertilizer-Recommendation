@@ -1,4 +1,4 @@
-This repo contains all the Backend services that support the Smart Fertilizer Recommendation Management AI.
+This repository contains all the Backend services that support the Smart Fertilizer Recommendation Management AI.
 
 It contains the following things :
 
